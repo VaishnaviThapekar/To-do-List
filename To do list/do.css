@@ -1,0 +1,138 @@
+  :root {
+    --bg: #ffffff;
+    --text: #333;
+    --card: #f8f9fa;
+    --accent: #28a745;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #f1f1f1;
+    --card: #1e1e1e;
+    --accent: #1db954;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .container {
+    background: var(--card);
+    border-radius: 15px;
+    padding: 30px;
+    width: 420px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #toggleDarkMode {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .input-group {
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+  }
+  
+  .input-group input, .input-group select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    flex: 1;
+  }
+  
+  .input-group button {
+    background: var(--accent);
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .filters button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #e2e2e2;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+    color: var(--text);
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    border-left: 6px solid transparent;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  li.fade-out {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  
+  li.low { border-left-color: green; }
+  li.medium { border-left-color: orange; }
+  li.high { border-left-color: red; }
+  
+  .actions i {
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  
+  #toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #333;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    display: none;
+    z-index: 999;
+    opacity: 0.9;
+  }
+  
