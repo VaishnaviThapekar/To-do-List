@@ -19,15 +19,6 @@ A fully functional and beautifully designed To-Do List Web Application that help
 
 📱 Responsive Design – Fully functional on desktop, tablet, and mobile devices.
 
-📂 Project Structure
-
-/To-do-list-app/
-│
-├── index.html         # Main HTML file
-├── style.css          # Styling for the application
-├── script.js          # JavaScript for all app logic
-└── assets/            # Optional folder for icons/images
-
 🚀 Getting Started
 
 To run this project locally:
